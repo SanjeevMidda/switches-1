@@ -1,8 +1,13 @@
+:root {
+  --switch-on-color: blue;
+  --switch-off-color: pink;
+}
+
 * {
   margin: 0px;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
-  transition: all 650ms;
+  transition: transform 650ms;
 }
 
 .App {
@@ -55,11 +60,11 @@ button {
 }
 
 .switchOn {
-  background-color: blue;
+  background-color: var(--switch-on-color);
   transform: translateX(36px);
 }
 
 .switchOff {
-  background-color: pink;
+  background-color: var(--switch-off-color);
   transform: translateX(0px);
 }
