@@ -2,6 +2,7 @@
   margin: 0px;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
+  transition: all 650ms;
 }
 
 .App {
@@ -9,4 +10,31 @@
   justify-content: center;
   align-items: center;
   height: 100dvh;
+}
+
+.switchContainer {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchHolder {
+  width: 80%;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(220, 220, 220);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.switch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
 }
