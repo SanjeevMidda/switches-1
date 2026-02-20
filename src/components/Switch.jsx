@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
 const Switch = () => {
-  const [selected, setSelected] = useState(false);
+  const [isOn, setIsOn] = useState(false);
 
-  const changeColor = () => setSelected((prev) => !prev);
+  const changeColor = () => setIsOn((prev) => !prev);
 
   return (
     <div className="switchContainer">
       <div className="switchHolder">
         <button
-          className={`switch ${selected ? "switchOn" : "switchOff"}`}
+          className={`switch ${isOn ? "switchOn" : "switchOff"}`}
           onClick={changeColor}
           role="switch"
-          aria-checked={selected}
+          aria-checked={isOn}
         ></button>
       </div>
     </div>
