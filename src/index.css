@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100dvh;
 }
 
@@ -37,4 +38,28 @@
   height: 30px;
   border-radius: 50%;
   background-color: blue;
+}
+
+.mainContainer {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  border: none;
+}
+
+.switchOn {
+  background-color: blue;
+  transform: translateX(36px);
+}
+
+.switchOff {
+  background-color: pink;
+  transform: translateX(0px);
 }

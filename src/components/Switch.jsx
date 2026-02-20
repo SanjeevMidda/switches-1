@@ -9,12 +9,10 @@ const Switch = () => {
     <div className="switchContainer">
       <div className="switchHolder">
         <button
-          className="switch"
-          style={{
-            background: selected ? "blue" : "pink",
-            transform: `translateX(${selected ? "0" : "36px"})`,
-          }}
+          className={`switch ${selected ? "switchOn" : "switchOff"}`}
           onClick={changeColor}
+          role="switch"
+          aria-checked={selected}
         ></button>
       </div>
     </div>
