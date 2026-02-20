@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Switch = () => {
   const [selected, setSelected] = useState(false);
 
-  const changeColor = () => setSelected(!selected);
+  const changeColor = () => setSelected((prev) => !prev);
 
   return (
     <div className="switchContainer">
