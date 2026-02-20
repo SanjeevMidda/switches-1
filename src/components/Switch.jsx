@@ -3,6 +3,8 @@ import React, { useState } from "react";
 // create dynamic color
 
 const Switch = () => {
+  const [selected, setSelected] = useState(false);
+
   return (
     <div className="switchContainer">
       <div className="switchHolder">
