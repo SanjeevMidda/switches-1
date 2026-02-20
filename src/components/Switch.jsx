@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// create dynamic color
-
 const Switch = () => {
   const [selected, setSelected] = useState(false);
 
@@ -10,14 +8,14 @@ const Switch = () => {
   return (
     <div className="switchContainer">
       <div className="switchHolder">
-        <div
+        <button
           className="switch"
           style={{
-            background: selected ? "blue" : "greenYellow",
+            background: selected ? "blue" : "pink",
             transform: `translateX(${selected ? "0" : "36px"})`,
           }}
           onClick={changeColor}
-        ></div>
+        ></button>
       </div>
     </div>
   );
